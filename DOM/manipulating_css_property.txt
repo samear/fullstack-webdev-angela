@@ -1,0 +1,13 @@
+Maniupulating css via JavaScript
+
+- Carmel text is very important here. In css it's written font-size but here it has to be fontSize.
+  document.querySelector("h1").style.fontSize = "100px"; or
+  document.querySelector("h1").style.fontSize = "10rem";
+
+ - hide/unhide h1
+   document.querySelector("h1").style.visibility = "hidden";
+   document.querySelector("h1").style.visibility = "visible";
+
+ - change background color of the button  
+   document.querySelector(".btn").style.backgroundColor = "yellow"; or
+   document.querySelector("utton").style.backgroundColor = "yellow";

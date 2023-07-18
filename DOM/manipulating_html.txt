@@ -1,0 +1,13 @@
+- change link of outside of list from google.com to bing.com
+
+    document.querySelector("a");
+    document.querySelector("a").attributes;
+    document.querySelector("a").getAttribute("href");
+    document.querySelector("a").setAttribute("href", "https://www.bing.com");
+
+- change link of inside of list from google.com to bing.com
+
+    document.querySelector("#list a");
+    document.querySelector("#list a").attributes;
+    document.querySelector("#list a").getAttribute("href");
+    document.querySelector("#list a").setAttribute("href", "https://www.bing.com");

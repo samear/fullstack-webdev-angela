@@ -1,0 +1,8 @@
+.huge {
+    font-size: 10rem;
+    color: red;
+    font-weight: bold;;
+}   
+
+/* try to add this call via chrome devtool as follow:
+   document.querySelector("h1").classList.add("huge");*/

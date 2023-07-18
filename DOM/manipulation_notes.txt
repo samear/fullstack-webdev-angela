@@ -1,0 +1,62 @@
+In chrome DevTool
+
+*** querySelector ***
+
+- Get H1
+  document.querySelector("h1");
+
+- Get id title. same as above
+  document.querySelector("#title");
+
+- Get class
+  document.querySelector(".btn");
+
+- Get google link inside the list (not outside). a represents anchor tag
+  document.querySelector("li a"); 
+
+- Get goole link outside of the list
+  document.querySelector("a");
+
+- combine
+  document.querySelector("li.item");
+
+- get anchor tag from the id list
+  document.querySelector("#list a");
+
+- This returns only the first item under id list
+  document.querySelector("#list .item");
+
+- This returns all item under id list
+  document.querySelectorAll("#list .item");
+
+- change color of item # 3 to blue
+  document.querySelectorAll("#list .item")[2].style.color = "blue";
+
+- change color of the second google link to red
+   document.querySelector("li a").style.color = "red" or
+   document.querySelector("#list a").style.color = "blue"; or
+   document.querySelectorAll("#list a")[0].style.color = "red";
+
+*** getElements ***
+
+- This returns an array of list items. Notice the word element is plural. Hence, it returns an array.
+  document.getElementsByTagName("li");
+
+- change color of the 3rd item
+  document.getElementsByTagName("li")[2].style.color = "yellow";
+
+- get length of array li
+  document.getElementsByTagName("li").length
+
+- This returns array of class
+  document.getElementsByClassName("btn");
+
+- change color of the button
+  document.getElementsByClassName("btn")[0].style.color = "red";
+
+- This returns id
+  document.getElementById("title");
+
+- change the time of the title
+  document.getElementById("title").innerHTML = "Good Bye";
+
