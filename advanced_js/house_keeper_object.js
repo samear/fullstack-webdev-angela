@@ -4,7 +4,7 @@ function HouseKeeper(yearsOfExperience, name, cleaningRepertoire) {
     this.cleaningRepertoire = cleaningRepertoire;
     this.clean = function() {
         alert("clenning...")
-}
+    }
 }
 
 
