@@ -1,15 +1,21 @@
     var t = 5000;
     h1Str = "Good Bye";
+    console.log("waiting... for " + t +"ms. before changing header.")
+    document.querySelector('p').innerHTML="running index.js";
 
-    /* setTimeout(function() {
-        console.log("waiting... " + t + "ms");
-        console.log("now change text in h1 to " + h1Str)
-        document.querySelector("h1").innerHTML = "Good Bye";
-    }, t) */
+    //setTimeout(myGreeting, t);
 
-    const myTimeou = setTimeout(myGreeting, t);
-
-    function myGreeting() {
-
+    /* function myGreeting() {
         document.querySelector("h1").innerHTML = h1Str;
-    }
+        document.querySelector('h1').style.color='red';
+        console.log("done.")
+    } */
+
+    // same as above, this is called anonymous function
+    setTimeout(function() {
+        document.querySelector("h1").innerHTML=h1Str;
+        document.querySelector('h1').style.color='red';
+        console.log("done.")}, t)
+
+    document.querySelector("a").style.color='red';
+    document.querySelectorAll("a")[1].style.color='green';
